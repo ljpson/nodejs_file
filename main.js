@@ -14,7 +14,7 @@ var app = http.createServer(function(request,response){
   if(pathname === '/'){
       if (queryData.id === undefined){
         fs.readdir('./data', 'utf8', function(error, filelist){
-            title = 'Welcome';
+            title = 'Welcome123';
             description = 'Hello World';
             var list = template.list(filelist);
             var html = template.html(title,list,
